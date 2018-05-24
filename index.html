@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<main>
+
+    
+
+    <h1>Totally Trivia, Trivia!</h1>
+
+
+    <p id="time">Time left:<span id="counter"></span></p>
+<form>
+    <div class="container1">
+
+        <h4 class="question">What's the name of Chris Cornell's first band:</h4>
+
+        <div class="form-check form-check-inline">
+
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">The Jones Street Band</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Soundgarden</label>
+              </div>
+              <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Badmotorfinger</label>
+                  </div>
+ 
+
+
+
+         <h4 class="question">Chris Cornell was a band member on this band:</h4>
+              
+         <div class="form-check form-check-inline">
+
+                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Pearl Jam</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Temple of the dog</label>
+              </div>
+              <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Alice in chains</label>
+                  </div>
+        
+         <h4 class="question">"Rusty Cage" was part of which album:</h4>
+
+         <div class="form-check form-check-inline">
+
+                <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Down on the Upside</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Burden in my Hand</label>
+              </div>
+              <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Badmotorfinger</label>
+                  </div>
+              <div>
+                    <button type="submit">Submit</button>
+             </div>
+
+ </form>
+
+ </div>  
+</main>
+ <script>
+
+     var number = 10 + "" + " seconds";
+     $("#counter").html(number);
+ 
+ setTimeout(tenSeconds,10000);
+
+
+ function tenSeconds(){
+     $("#counter").html("Time's up");
+     console.log("10 sec");
+ }
+
+//-------------------------------------------------------------//
+
+var question1 = function getValue(inlineRadioOptions1){
+  var radio1 = document.forms[0].elements[inlineRadioOptions1];
+  for (var i = 0; i < radio1.lenght;i++ ){
+    if (radio1[i].checked){
+      return radio1[i].value;
+    }
+  }
+}
+
+
+var question2 = function getValue(inlineRadioOptions2){
+  var radio2 = document.forms[0].elements[inlineRadioOptions2];
+  for (var i = 0; i < radio2.lenght;i++ ){
+    if (radio1[i].checked){
+      return radio1[i].value;
+    }
+  }
+}
+
+
+var question3 = function getValue(inlineRadioOptions3){
+  var radio3 = document.forms[0].elements[inlineRadioOptions3];
+  for (var i = 0; i < radio3.lenght;i++ ){
+    if (radio1[i].checked){
+      return radio1[i].value;
+    }
+  }
+}
+
+ 
+ </script>
+     
+
+    
+
+    
+</body>
+</html>
